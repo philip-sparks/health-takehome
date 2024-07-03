@@ -1,10 +1,10 @@
-package serifHealthTakeHome
+package HealthTakeHome
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{ArrayType, StringType, StructField, StructType}
 
-object SerifQuestions extends App {
+object Questions extends App {
   val spark = SparkSession.builder()
     .appName("Serif Takehome Anthem Index Parsing")
     .config("spark.master", "local")

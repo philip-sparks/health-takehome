@@ -1,5 +1,7 @@
 # Handling Health Data
 
+## Contributing
+
 ## How do you handle the file size and format efficiently when the uncompressed file will exceed memory limitations on most systems?
 
 Originally, I tried to read the file natively into Spark, which took too long. Then I looked into explicitly defining the schema, which did not take as much time but took a while to create in Scala. Next, I decided to parse the file into a Parquet file using pure Python. That compresses well, but then seems to explode when you try reloading it back into Spark.
